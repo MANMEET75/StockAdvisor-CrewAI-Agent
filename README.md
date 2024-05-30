@@ -50,5 +50,11 @@ pip install -r requirements.txt
 ```bash
 uvicorn main:app --reload --port 8080
 ```
+### React Application Installation Steps
+1. **Install Node.js:** Make sure you have Node.js installed on your system.
+2. **Create React App:** Run npx create-react-app my-app to create a new React project.
+3. **Install Dependencies:** Navigate to your React project directory (my-app in this case) and install additional dependencies using npm install axios for making HTTP requests.
+4. **Start Development Server:** Run npm start to start the development server.
+5. **Update App.js:** Replace the API URL over here as we are calling an API here.
 
 Enjoy Coding!
