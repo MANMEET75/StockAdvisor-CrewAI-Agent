@@ -11,7 +11,7 @@ os.environ['SERPER_API_KEY'] = os.getenv('SERPER_API_KEY')
 from crewai_tools import SerperDevTool
 
 # over here we are using gemini model we can use use google palm over here
-llm=ChatGoogleGenerativeAI(model="gemini-.15-flash",
+llm=ChatGoogleGenerativeAI(model="gemini-1.5-flash",
                            verbose=True,
                            temperature=0.5,
                            google_api_key=os.getenv("GOOGLE_API_KEY"))
