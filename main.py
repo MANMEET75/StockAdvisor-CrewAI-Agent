@@ -7,8 +7,19 @@ import os
 from crewai import Task
 from langchain_google_genai import ChatGoogleGenerativeAI
 from crewai import Crew, Process
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
+# Allow requests from all origins
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 # Load environment variables
 load_dotenv()
@@ -62,7 +73,7 @@ crew = Crew(
 async def read_root():
     return RedirectResponse(url="/docs")
 
-@app.post("/Analyze Stock/", response_class=JSONResponse)
+@app.post("/AnalyzeStock/", response_class=JSONResponse)
 async def analyze_stock(CompanyName: str = Form(...)):
     result = crew.kickoff(inputs={"CompanyName": CompanyName})
     return {"result": result}
