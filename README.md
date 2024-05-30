@@ -1,1 +1,1 @@
-# InvestGenius--CrewAI-Agent
+# StockAdvisor-CrewAI-Agent
