@@ -3,6 +3,10 @@
 ## Agent Overview
 
 StockAdvisor, a potent tool developed with the assistance of CrewAI, is customized for individuals eager to invest and profit in the stock market but lack the time or expertise for thorough research. It provides professional guidance at no cost, catering to busy lifestyles. Having personally benefited from this tool, I've achieved substantial financial gains in the stock market. Now, it's your turn to reap its rewards. I am open-sourcing this incredible personal agent.
+<h1 align="center">
+  StockAdvisor-Demo
+  <br>
+</h1>
 <img src="static/5.png">
 
 ## Technical Stack
