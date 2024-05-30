@@ -195,3 +195,7 @@ yarl==1.9.4
 youtube-transcript-api==0.6.2
 yt-dlp==2023.12.30
 zipp==3.19.0
+uvicorn
+jinja2
+fastapi
+python-multipart

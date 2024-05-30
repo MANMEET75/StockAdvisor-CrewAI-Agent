@@ -17,6 +17,7 @@ list_of_files = [
     "tasks.py",
     "tools.py",
     "app.py",
+    "main.py",
     "templates/index.html",
     "static/style.css",
     "research/experiment.ipynb",
